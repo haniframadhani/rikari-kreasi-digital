@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Portfolio from "@/components/sections/portfolio";
 
 export default function Home() {
   return (
@@ -226,6 +227,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Portfolio />
 
       {/* Portfolio Section */}
       <section className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
@@ -503,15 +506,18 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* Partners & Clients Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-gray-800">Our Partners & Clients</h2>
+            <h2 className="text-4xl font-bold mb-6 text-gray-800">
+              Our Partners & Clients
+            </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We're proud to collaborate with leading educational institutions, government agencies, and technology
-              partners to deliver exceptional digital learning experiences across Indonesia.
+              We're proud to collaborate with leading educational institutions,
+              government agencies, and technology partners to deliver
+              exceptional digital learning experiences across Indonesia.
             </p>
           </div>
 
@@ -523,7 +529,9 @@ export default function Home() {
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BookOpen className="w-8 h-8 text-purple-600" />
                 </div>
-                <CardTitle className="text-xl">Educational Institutions</CardTitle>
+                <CardTitle className="text-xl">
+                  Educational Institutions
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3 text-sm text-gray-600">
@@ -532,7 +540,9 @@ export default function Home() {
                   <div className="font-semibold">• SMP Labschool Kebayoran</div>
                   <div className="font-semibold">• SMPN 5 Surabaya</div>
                   <div className="font-semibold">• SMA Santa Ursula</div>
-                  <div className="text-purple-600 font-medium">+35 more schools</div>
+                  <div className="text-purple-600 font-medium">
+                    +35 more schools
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -552,7 +562,9 @@ export default function Home() {
                   <div className="font-semibold">• Dinas Pendidikan Jabar</div>
                   <div className="font-semibold">• BPPT Indonesia</div>
                   <div className="font-semibold">• Kominfo RI</div>
-                  <div className="text-pink-600 font-medium">Digital literacy programs</div>
+                  <div className="text-pink-600 font-medium">
+                    Digital literacy programs
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -572,7 +584,9 @@ export default function Home() {
                   <div className="font-semibold">• Google for Education</div>
                   <div className="font-semibold">• Microsoft Education</div>
                   <div className="font-semibold">• Adobe Creative Cloud</div>
-                  <div className="text-red-600 font-medium">Certified partners</div>
+                  <div className="text-red-600 font-medium">
+                    Certified partners
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -592,7 +606,9 @@ export default function Home() {
                   <div className="font-semibold">• Digital Happiness</div>
                   <div className="font-semibold">• Touchten Games</div>
                   <div className="font-semibold">• Kidalang</div>
-                  <div className="text-emerald-600 font-medium">Game industry network</div>
+                  <div className="text-emerald-600 font-medium">
+                    Game industry network
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -600,15 +616,21 @@ export default function Home() {
 
           {/* Client Testimonials */}
           <div className="mb-16">
-            <h3 className="text-3xl font-bold text-center mb-12 text-gray-800">What Our Partners Say</h3>
+            <h3 className="text-3xl font-bold text-center mb-12 text-gray-800">
+              What Our Partners Say
+            </h3>
             <div className="grid lg:grid-cols-3 gap-8">
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
                   <div className="mb-4">
-                    <div className="flex text-yellow-400 mb-2">{"★".repeat(5)}</div>
+                    <div className="flex text-yellow-400 mb-2">
+                      {"★".repeat(5)}
+                    </div>
                     <p className="text-gray-600 italic mb-4">
-                      "Rikari Kreasi Digital transformed our computer science curriculum. Students are now more engaged
-                      and excited about learning programming through their game development course."
+                      "Rikari Kreasi Digital transformed our computer science
+                      curriculum. Students are now more engaged and excited
+                      about learning programming through their game development
+                      course."
                     </p>
                   </div>
                   <div className="flex items-center">
@@ -616,8 +638,12 @@ export default function Home() {
                       <Users className="w-6 h-6 text-purple-600" />
                     </div>
                     <div>
-                      <div className="font-semibold">Dra. Sari Wijaya, M.Pd</div>
-                      <div className="text-sm text-gray-500">Principal, SMAN 1 Jakarta</div>
+                      <div className="font-semibold">
+                        Dra. Sari Wijaya, M.Pd
+                      </div>
+                      <div className="text-sm text-gray-500">
+                        Principal, SMAN 1 Jakarta
+                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -626,10 +652,13 @@ export default function Home() {
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
                   <div className="mb-4">
-                    <div className="flex text-yellow-400 mb-2">{"★".repeat(5)}</div>
+                    <div className="flex text-yellow-400 mb-2">
+                      {"★".repeat(5)}
+                    </div>
                     <p className="text-gray-600 italic mb-4">
-                      "The VR History Museum project has revolutionized how our students learn about ancient
-                      civilizations. The engagement level is unprecedented."
+                      "The VR History Museum project has revolutionized how our
+                      students learn about ancient civilizations. The engagement
+                      level is unprecedented."
                     </p>
                   </div>
                   <div className="flex items-center">
@@ -638,7 +667,9 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="font-semibold">Dr. Ahmad Fauzi</div>
-                      <div className="text-sm text-gray-500">History Teacher, SMP Labschool</div>
+                      <div className="text-sm text-gray-500">
+                        History Teacher, SMP Labschool
+                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -647,10 +678,13 @@ export default function Home() {
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6">
                   <div className="mb-4">
-                    <div className="flex text-yellow-400 mb-2">{"★".repeat(5)}</div>
+                    <div className="flex text-yellow-400 mb-2">
+                      {"★".repeat(5)}
+                    </div>
                     <p className="text-gray-600 italic mb-4">
-                      "Working with Rikari has been exceptional. Their educational games have improved our students'
-                      math scores by 40% while making learning fun."
+                      "Working with Rikari has been exceptional. Their
+                      educational games have improved our students' math scores
+                      by 40% while making learning fun."
                     </p>
                   </div>
                   <div className="flex items-center">
@@ -659,7 +693,9 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="font-semibold">Ibu Ratna Sari, S.Pd</div>
-                      <div className="text-sm text-gray-500">Math Coordinator, SMPN 5 Surabaya</div>
+                      <div className="text-sm text-gray-500">
+                        Math Coordinator, SMPN 5 Surabaya
+                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -669,10 +705,14 @@ export default function Home() {
 
           {/* Partnership Stats */}
           <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">Partnership Impact</h3>
+            <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">
+              Partnership Impact
+            </h3>
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">40+</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">
+                  40+
+                </div>
                 <p className="text-gray-600 font-medium">School Partners</p>
                 <p className="text-sm text-gray-500">Across Indonesia</p>
               </div>
@@ -687,8 +727,12 @@ export default function Home() {
                 <p className="text-sm text-gray-500">Global Companies</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-emerald-600 mb-2">25+</div>
-                <p className="text-gray-600 font-medium">Industry Collaborations</p>
+                <div className="text-3xl font-bold text-emerald-600 mb-2">
+                  25+
+                </div>
+                <p className="text-gray-600 font-medium">
+                  Industry Collaborations
+                </p>
                 <p className="text-sm text-gray-500">Game Studios</p>
               </div>
             </div>
@@ -696,10 +740,13 @@ export default function Home() {
 
           {/* Partnership CTA */}
           <div className="text-center mt-12">
-            <h3 className="text-2xl font-bold mb-4 text-gray-800">Become Our Partner</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">
+              Become Our Partner
+            </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Join our growing network of educational institutions and organizations committed to transforming digital
-              education in Indonesia.
+              Join our growing network of educational institutions and
+              organizations committed to transforming digital education in
+              Indonesia.
             </p>
             <Button
               size="lg"
