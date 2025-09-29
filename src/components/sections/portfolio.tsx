@@ -63,8 +63,8 @@ export default function Portfolio() {
             Our Portfolio
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore our latest projects and see how we've transformed ideas into
-            engaging digital experiences across games, VR, and educational
+            Explore our latest projects and see how we&apos;ve transformed ideas
+            into engaging digital experiences across games, VR, and educational
             programs.
           </p>
         </div>
@@ -77,6 +77,26 @@ export default function Portfolio() {
               openModal={openModal}
             />
           ))}
+        </div>
+
+        {/* Portfolio Stats */}
+        <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          <div className="text-center">
+            <div className="text-4xl font-bold text-purple-600 mb-2">50+</div>
+            <p className="text-gray-600">Projects Completed</p>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-bold text-pink-600 mb-2">40+</div>
+            <p className="text-gray-600">Schools Partnered</p>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-bold text-red-600 mb-2">5,000+</div>
+            <p className="text-gray-600">Students Reached</p>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-bold text-emerald-600 mb-2">99%</div>
+            <p className="text-gray-600">Satisfaction Rate</p>
+          </div>
         </div>
       </div>
       {selectedProject && (

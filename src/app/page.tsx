@@ -154,11 +154,11 @@ export default function Home() {
                   <Badge variant="secondary">Educational Games</Badge>
                   <Badge variant="secondary">Serious Games</Badge>
                 </div>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Custom game design and development</li>
-                  <li>• Cross-platform compatibility</li>
-                  <li>• Educational game mechanics</li>
-                  <li>• Performance optimization</li>
+                <ul className="space-y-2 text-sm text-gray-600 list-disc">
+                  <li>Custom game design and development</li>
+                  <li>Cross-platform compatibility</li>
+                  <li>Educational game mechanics</li>
+                  <li>Performance optimization</li>
                 </ul>
               </CardContent>
             </Card>
@@ -185,11 +185,11 @@ export default function Home() {
                   <Badge variant="secondary">Virtual Tours</Badge>
                   <Badge variant="secondary">Interactive Learning</Badge>
                 </div>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Immersive learning environments</li>
-                  <li>• Virtual field trips and tours</li>
-                  <li>• Skills training simulations</li>
-                  <li>• Multi-platform VR support</li>
+                <ul className="space-y-2 text-sm text-gray-600 list-disc">
+                  <li>Immersive learning environments</li>
+                  <li>Virtual field trips and tours</li>
+                  <li>Skills training simulations</li>
+                  <li>Multi-platform VR support</li>
                 </ul>
               </CardContent>
             </Card>
@@ -216,11 +216,11 @@ export default function Home() {
                   <Badge variant="secondary">3D Modeling</Badge>
                   <Badge variant="secondary">Project Management</Badge>
                 </div>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Age-appropriate curriculum design</li>
-                  <li>• Hands-on project-based learning</li>
-                  <li>• Professional instructor support</li>
-                  <li>• Portfolio development guidance</li>
+                <ul className="space-y-2 text-sm text-gray-600 list-disc">
+                  <li>Age-appropriate curriculum design</li>
+                  <li>Hands-on project-based learning</li>
+                  <li>Professional instructor support</li>
+                  <li>Portfolio development guidance</li>
                 </ul>
               </CardContent>
             </Card>
@@ -230,283 +230,6 @@ export default function Home() {
 
       <Portfolio />
 
-      {/* Portfolio Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-gray-800">
-              Our Portfolio
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explore our latest projects and see how we've transformed ideas
-              into engaging digital experiences across games, VR, and
-              educational programs.
-            </p>
-          </div>
-
-          {/* Portfolio Grid */}
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mb-12">
-            {/* Game Project 1 */}
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
-                <Gamepad2 className="w-16 h-16 text-white" />
-              </div>
-              <CardHeader>
-                <div className="flex items-center justify-between mb-2">
-                  <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100">
-                    Game Development
-                  </Badge>
-                </div>
-                <CardTitle className="text-xl">EcoQuest Adventure</CardTitle>
-                <CardDescription>
-                  An educational mobile game teaching environmental conservation
-                  through interactive storytelling and puzzle-solving.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline" className="text-xs">
-                    Unity
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    C#
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Mobile
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Educational
-                  </Badge>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Developed for middle school students, featuring 20+ levels and
-                  interactive mini-games that teach sustainability concepts.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* VR Project 1 */}
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-pink-400 to-pink-600 flex items-center justify-center">
-                <Headphones className="w-16 h-16 text-white" />
-              </div>
-              <CardHeader>
-                <div className="flex items-center justify-between mb-2">
-                  <Badge className="bg-pink-100 text-pink-700 hover:bg-pink-100">
-                    VR Experience
-                  </Badge>
-                </div>
-                <CardTitle className="text-xl">
-                  Virtual History Museum
-                </CardTitle>
-                <CardDescription>
-                  Immersive VR experience allowing students to explore ancient
-                  civilizations and historical events firsthand.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline" className="text-xs">
-                    Unreal Engine
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    VR
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    3D Modeling
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    History
-                  </Badge>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Features 5 historical periods with interactive artifacts and
-                  guided tours, used by 15+ schools nationwide.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Educational Course Project */}
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
-                <BookOpen className="w-16 h-16 text-white" />
-              </div>
-              <CardHeader>
-                <div className="flex items-center justify-between mb-2">
-                  <Badge className="bg-red-100 text-red-700 hover:bg-red-100">
-                    Educational Program
-                  </Badge>
-                </div>
-                <CardTitle className="text-xl">GameDev Academy</CardTitle>
-                <CardDescription>
-                  12-week comprehensive game development course for high school
-                  students covering programming, design, and project management.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline" className="text-xs">
-                    Curriculum
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Scratch
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Unity
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Portfolio
-                  </Badge>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Successfully graduated 200+ students with 85% creating their
-                  own published games by course completion.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Game Project 2 */}
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center">
-                <Gamepad2 className="w-16 h-16 text-white" />
-              </div>
-              <CardHeader>
-                <div className="flex items-center justify-between mb-2">
-                  <Badge className="bg-emerald-100 text-emerald-700 hover:bg-emerald-100">
-                    Game Development
-                  </Badge>
-                </div>
-                <CardTitle className="text-xl">Math Heroes</CardTitle>
-                <CardDescription>
-                  Multiplayer educational game that makes learning mathematics
-                  fun through competitive gameplay and achievements.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline" className="text-xs">
-                    React Native
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Node.js
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Multiplayer
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Mathematics
-                  </Badge>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Real-time multiplayer battles with adaptive difficulty,
-                  serving 10,000+ active students monthly.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* VR Project 2 */}
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center">
-                <Headphones className="w-16 h-16 text-white" />
-              </div>
-              <CardHeader>
-                <div className="flex items-center justify-between mb-2">
-                  <Badge className="bg-cyan-100 text-cyan-700 hover:bg-cyan-100">
-                    VR Experience
-                  </Badge>
-                </div>
-                <CardTitle className="text-xl">Science Lab Simulator</CardTitle>
-                <CardDescription>
-                  Safe virtual laboratory environment for conducting chemistry
-                  and physics experiments without real-world risks.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline" className="text-xs">
-                    Unity VR
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Physics
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Chemistry
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Simulation
-                  </Badge>
-                </div>
-                <p className="text-sm text-gray-600">
-                  50+ interactive experiments with realistic physics simulation,
-                  adopted by 25+ educational institutions.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Educational Course Project 2 */}
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
-                <BookOpen className="w-16 h-16 text-white" />
-              </div>
-              <CardHeader>
-                <div className="flex items-center justify-between mb-2">
-                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100">
-                    Educational Program
-                  </Badge>
-                </div>
-                <CardTitle className="text-xl">VR Creator Workshop</CardTitle>
-                <CardDescription>
-                  Intensive 8-week program teaching students to create their own
-                  VR experiences using industry-standard tools.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline" className="text-xs">
-                    Blender
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Unity VR
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    3D Design
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    Workshop
-                  </Badge>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Hands-on training with VR headsets, resulting in
-                  student-created VR experiences showcased at tech exhibitions.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Portfolio Stats */}
-          <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 mb-2">50+</div>
-              <p className="text-gray-600">Projects Completed</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-pink-600 mb-2">40+</div>
-              <p className="text-gray-600">Schools Partnered</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-red-600 mb-2">5,000+</div>
-              <p className="text-gray-600">Students Reached</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-emerald-600 mb-2">
-                95%
-              </div>
-              <p className="text-gray-600">Satisfaction Rate</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Partners & Clients Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -515,9 +238,9 @@ export default function Home() {
               Our Partners & Clients
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We're proud to collaborate with leading educational institutions,
-              government agencies, and technology partners to deliver
-              exceptional digital learning experiences across Indonesia.
+              We&apos;re proud to collaborate with leading educational
+              institutions, government agencies, and technology partners to
+              deliver exceptional digital learning experiences across Indonesia.
             </p>
           </div>
 
@@ -535,11 +258,11 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3 text-sm text-gray-600">
-                  <div className="font-semibold">• SMA Negeri 1 Jakarta</div>
-                  <div className="font-semibold">• SMAN 3 Bandung</div>
-                  <div className="font-semibold">• SMP Labschool Kebayoran</div>
-                  <div className="font-semibold">• SMPN 5 Surabaya</div>
-                  <div className="font-semibold">• SMA Santa Ursula</div>
+                  <div className="font-semibold">SMA Negeri 1 Jakarta</div>
+                  <div className="font-semibold">SMAN 3 Bandung</div>
+                  <div className="font-semibold">SMP Labschool Kebayoran</div>
+                  <div className="font-semibold">SMPN 5 Surabaya</div>
+                  <div className="font-semibold">SMA Santa Ursula</div>
                   <div className="text-purple-600 font-medium">
                     +35 more schools
                   </div>
@@ -557,11 +280,11 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3 text-sm text-gray-600">
-                  <div className="font-semibold">• Kemendikbud RI</div>
-                  <div className="font-semibold">• Dinas Pendidikan DKI</div>
-                  <div className="font-semibold">• Dinas Pendidikan Jabar</div>
-                  <div className="font-semibold">• BPPT Indonesia</div>
-                  <div className="font-semibold">• Kominfo RI</div>
+                  <div className="font-semibold">Kemendikbud RI</div>
+                  <div className="font-semibold">Dinas Pendidikan DKI</div>
+                  <div className="font-semibold">Dinas Pendidikan Jabar</div>
+                  <div className="font-semibold">BPPT Indonesia</div>
+                  <div className="font-semibold">Kominfo RI</div>
                   <div className="text-pink-600 font-medium">
                     Digital literacy programs
                   </div>
@@ -579,11 +302,11 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3 text-sm text-gray-600">
-                  <div className="font-semibold">• Unity Technologies</div>
-                  <div className="font-semibold">• Meta (Oculus)</div>
-                  <div className="font-semibold">• Google for Education</div>
-                  <div className="font-semibold">• Microsoft Education</div>
-                  <div className="font-semibold">• Adobe Creative Cloud</div>
+                  <div className="font-semibold">Unity Technologies</div>
+                  <div className="font-semibold">Meta (Oculus)</div>
+                  <div className="font-semibold">Google for Education</div>
+                  <div className="font-semibold">Microsoft Education</div>
+                  <div className="font-semibold">Adobe Creative Cloud</div>
                   <div className="text-red-600 font-medium">
                     Certified partners
                   </div>
@@ -601,11 +324,11 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3 text-sm text-gray-600">
-                  <div className="font-semibold">• Toge Productions</div>
-                  <div className="font-semibold">• Agate International</div>
-                  <div className="font-semibold">• Digital Happiness</div>
-                  <div className="font-semibold">• Touchten Games</div>
-                  <div className="font-semibold">• Kidalang</div>
+                  <div className="font-semibold">Toge Productions</div>
+                  <div className="font-semibold">Agate International</div>
+                  <div className="font-semibold">Digital Happiness</div>
+                  <div className="font-semibold">Touchten Games</div>
+                  <div className="font-semibold">Kidalang</div>
                   <div className="text-emerald-600 font-medium">
                     Game industry network
                   </div>
@@ -627,10 +350,10 @@ export default function Home() {
                       {"★".repeat(5)}
                     </div>
                     <p className="text-gray-600 italic mb-4">
-                      "Rikari Kreasi Digital transformed our computer science
-                      curriculum. Students are now more engaged and excited
-                      about learning programming through their game development
-                      course."
+                      &quot;Rikari Kreasi Digital transformed our computer
+                      science curriculum. Students are now more engaged and
+                      excited about learning programming through their game
+                      development course.&quot;
                     </p>
                   </div>
                   <div className="flex items-center">
@@ -656,9 +379,9 @@ export default function Home() {
                       {"★".repeat(5)}
                     </div>
                     <p className="text-gray-600 italic mb-4">
-                      "The VR History Museum project has revolutionized how our
-                      students learn about ancient civilizations. The engagement
-                      level is unprecedented."
+                      &quot;The VR History Museum project has revolutionized how
+                      our students learn about ancient civilizations. The
+                      engagement level is unprecedented.&quot;
                     </p>
                   </div>
                   <div className="flex items-center">
@@ -682,9 +405,9 @@ export default function Home() {
                       {"★".repeat(5)}
                     </div>
                     <p className="text-gray-600 italic mb-4">
-                      "Working with Rikari has been exceptional. Their
-                      educational games have improved our students' math scores
-                      by 40% while making learning fun."
+                      &quot;Working with Rikari has been exceptional. Their
+                      educational games have improved our students&apos; math
+                      scores by 40% while making learning fun.&quot;
                     </p>
                   </div>
                   <div className="flex items-center">
