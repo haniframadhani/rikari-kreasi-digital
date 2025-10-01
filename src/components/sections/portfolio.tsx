@@ -16,6 +16,7 @@ import nr2 from "../../assets/nr-2.png";
 import nr3 from "../../assets/nr-3.png";
 import nr4 from "../../assets/nr-4.png";
 import nr5 from "../../assets/nr-5.png";
+import SimpleStats from "../simpleStats";
 
 const portfolioProjects: PortfolioProject[] = [
   {
@@ -29,7 +30,7 @@ const portfolioProjects: PortfolioProject[] = [
     demoUrl:
       "https://play.google.com/store/apps/details?id=com.robiin.numberrun&pcampaignid=web_share",
     galleryImages: [nr1, nr2, nr3, nr4, nr5],
-    downloadNumber: "100+"
+    downloadNumber: "100+",
   },
   {
     type: "educational",
@@ -81,22 +82,30 @@ export default function Portfolio() {
 
         {/* Portfolio Stats */}
         <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-          <div className="text-center">
-            <div className="text-4xl font-bold text-purple-600 mb-2">50+</div>
-            <p className="text-gray-600">Projects Completed</p>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-pink-600 mb-2">40+</div>
-            <p className="text-gray-600">Schools Partnered</p>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-red-600 mb-2">5,000+</div>
-            <p className="text-gray-600">Students Reached</p>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-emerald-600 mb-2">99%</div>
-            <p className="text-gray-600">Satisfaction Rate</p>
-          </div>
+          <SimpleStats
+            numberSize="4xl"
+            number="50+"
+            label="Projects Completed"
+            color="text-blue-600"
+          />
+          <SimpleStats
+            numberSize="4xl"
+            number="40+"
+            label="Schools Partnered"
+            color="text-pink-600"
+          />
+          <SimpleStats
+            numberSize="4xl"
+            number="50,000+"
+            label="Students Reached"
+            color="text-red-600"
+          />
+          <SimpleStats
+            numberSize="4xl"
+            number="99%"
+            label="Satisfaction Rate"
+            color="text-emerald-600"
+          />
         </div>
       </div>
       {selectedProject && (
