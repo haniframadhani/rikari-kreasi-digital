@@ -1,5 +1,5 @@
-import { Zap, Users, Headphones } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Users, Headphones, Lightbulb } from "lucide-react";
+import AboutCard from "../aboutCard";
 
 export default function About() {
   return (
@@ -18,50 +18,29 @@ export default function About() {
       </div>
 
       <div className="grid md:grid-cols-3 gap-8 mb-16">
-        <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow">
-          <CardHeader>
-            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Zap className="w-8 h-8 text-purple-600" />
-            </div>
-            <CardTitle className="text-xl">Innovation</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-gray-600">
-              Pushing boundaries with cutting-edge technology and creative
-              solutions that shape the future of digital entertainment.
-            </p>
-          </CardContent>
-        </Card>
+        <AboutCard
+          title="Innovation"
+          description="Pushing boundaries with cutting-edge technology and creative
+              solutions that shape the future of digital entertainment."
+          color="purple"
+          icon={<Lightbulb className="w-8 h-8 text-purple-600" />}
+        />
 
-        <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow">
-          <CardHeader>
-            <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-pink-600" />
-            </div>
-            <CardTitle className="text-xl">Education</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-gray-600">
-              Empowering students and educators with comprehensive programs that
-              make learning interactive and engaging.
-            </p>
-          </CardContent>
-        </Card>
+        <AboutCard
+          title="Education"
+          description="Empowering students and educators with comprehensive programs that
+              make learning interactive and engaging."
+          color="pink"
+          icon={<Users className="w-8 h-8 text-pink-600" />}
+        />
 
-        <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow">
-          <CardHeader>
-            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Headphones className="w-8 h-8 text-red-600" />
-            </div>
-            <CardTitle className="text-xl">Experience</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-gray-600">
-              Creating immersive experiences that transport users to new worlds
-              and possibilities through VR and interactive media.
-            </p>
-          </CardContent>
-        </Card>
+        <AboutCard
+          title="Experience"
+          description="Creating immersive experiences that transport users to new worlds
+              and possibilities through VR and interactive media."
+          color="green"
+          icon={<Headphones className="w-8 h-8 text-green-600" />}
+        />
       </div>
     </section>
   );
