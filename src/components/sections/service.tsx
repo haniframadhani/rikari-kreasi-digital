@@ -1,12 +1,5 @@
 import { Gamepad2, Headphones, BookOpen } from "lucide-react";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-} from "../ui/card";
-import { Badge } from "../ui/badge";
+import ServiceCard from "../serviceCard";
 
 export default function Service() {
   return (
@@ -23,98 +16,68 @@ export default function Service() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Game Development */}
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-            <CardHeader>
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
-                <Gamepad2 className="w-10 h-10 text-white" />
-              </div>
-              <CardTitle className="text-2xl">Game Development</CardTitle>
-              <CardDescription className="text-base">
-                Custom game solutions for entertainment and education
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-gray-600">
-                From concept to deployment, we create engaging games that
-                captivate audiences and deliver meaningful experiences.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">Mobile Games</Badge>
-                <Badge variant="secondary">PC Games</Badge>
-                <Badge variant="secondary">Educational Games</Badge>
-                <Badge variant="secondary">Serious Games</Badge>
-              </div>
-              <ul className="space-y-2 text-sm text-gray-600 list-disc list-inside">
-                <li>Custom game design and development</li>
-                <li>Cross-platform compatibility</li>
-                <li>Educational game mechanics</li>
-                <li>Performance optimization</li>
-              </ul>
-            </CardContent>
-          </Card>
+          <ServiceCard
+            title="Game Development"
+            shortDescription="Custom game solutions for entertainment and education"
+            longDescription="From concept to deployment, we create engaging games that
+                captivate audiences and deliver meaningful experiences."
+            tags={[
+              "Mobile Games",
+              "PC Games",
+              "Educational Games",
+              "Serious Games",
+            ]}
+            details={[
+              "Custom game design and development",
+              "Cross-platform compatibility",
+              "Educational game mechanics",
+              "Performance optimization",
+            ]}
+            color="purple"
+            icon={<Gamepad2 className="w-10 h-10 text-white" />}
+          />
 
-          {/* VR Experiences */}
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-            <CardHeader>
-              <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-pink-600 rounded-lg flex items-center justify-center mb-4">
-                <Headphones className="w-10 h-10 text-white" />
-              </div>
-              <CardTitle className="text-2xl">VR Experiences</CardTitle>
-              <CardDescription className="text-base">
-                Immersive virtual reality solutions for various applications
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-gray-600">
-                Transform learning and entertainment through cutting-edge VR
-                technology that creates unforgettable immersive experiences.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">Educational VR</Badge>
-                <Badge variant="secondary">Training Simulations</Badge>
-                <Badge variant="secondary">Virtual Tours</Badge>
-                <Badge variant="secondary">Interactive Learning</Badge>
-              </div>
-              <ul className="space-y-2 text-sm text-gray-600 list-disc list-inside">
-                <li>Immersive learning environments</li>
-                <li>Virtual field trips and tours</li>
-                <li>Skills training simulations</li>
-                <li>Multi-platform VR support</li>
-              </ul>
-            </CardContent>
-          </Card>
+          <ServiceCard
+            title="VR Experiences"
+            shortDescription="Immersive virtual reality solutions for various applications"
+            longDescription="Transform learning and entertainment through cutting-edge VR
+                technology that creates unforgettable immersive experiences."
+            tags={[
+              "Educational VR",
+              "Training Simulations",
+              "Virtual Tours",
+              "Interactive Learning",
+            ]}
+            details={[
+              "Immersive learning environments",
+              "Virtual field trips and tours",
+              "Skills training simulations",
+              "Multi-platform VR support",
+            ]}
+            color="pink"
+            icon={<Headphones className="w-10 h-10 text-white" />}
+          />
 
-          {/* Educational Courses */}
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-            <CardHeader>
-              <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center mb-4">
-                <BookOpen className="w-10 h-10 text-white" />
-              </div>
-              <CardTitle className="text-2xl">Educational Courses</CardTitle>
-              <CardDescription className="text-base">
-                Comprehensive game development programs for schools
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-gray-600">
-                Structured extracurricular programs that teach students the
-                fundamentals of game development and digital creativity.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">Coding Basics</Badge>
-                <Badge variant="secondary">Game Design</Badge>
-                <Badge variant="secondary">3D Modeling</Badge>
-                <Badge variant="secondary">Project Management</Badge>
-              </div>
-              <ul className="space-y-2 text-sm text-gray-600 list-disc list-inside">
-                <li>Age-appropriate curriculum design</li>
-                <li>Hands-on project-based learning</li>
-                <li>Professional instructor support</li>
-                <li>Portfolio development guidance</li>
-              </ul>
-            </CardContent>
-          </Card>
+          <ServiceCard
+            title="Educational Courses"
+            shortDescription="Comprehensive game development programs for schools"
+            longDescription="Structured extracurricular programs that teach students the
+                fundamentals of game development and digital creativity."
+            tags={[
+              "Coding Basics",
+              "Game Design",
+              "3D Modeling",
+              "Project Management",
+            ]}
+            details={[
+              "Age-appropriate curriculum design",
+              "Hands-on project-based learning",
+              "Professional instructor support",
+              "Portfolio development guidance",
+            ]}
+            color="red"
+            icon={<BookOpen className="w-10 h-10 text-white" />}
+          />
         </div>
       </div>
     </section>
