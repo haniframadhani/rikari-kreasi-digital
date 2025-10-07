@@ -1,6 +1,8 @@
 import { BookOpen, Users, Zap, Gamepad2 } from "lucide-react";
 import { Button } from "../ui/button";
-import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
+import PartnerList from "../partnerList";
+import PartnerTestimony from "../partnerTestimony";
+import SimpleStats from "../simpleStats";
 
 export default function Partner() {
   return (
@@ -19,95 +21,61 @@ export default function Partner() {
 
         {/* Partner Categories */}
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-16">
-          {/* Educational Institutions */}
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow text-center">
-            <CardHeader>
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="w-8 h-8 text-purple-600" />
-              </div>
-              <CardTitle className="text-xl">
-                Educational Institutions
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-3 text-sm text-gray-600">
-                <div className="font-semibold">SMA Negeri 1 Jakarta</div>
-                <div className="font-semibold">SMAN 3 Bandung</div>
-                <div className="font-semibold">SMP Labschool Kebayoran</div>
-                <div className="font-semibold">SMPN 5 Surabaya</div>
-                <div className="font-semibold">SMA Santa Ursula</div>
-                <div className="text-purple-600 font-medium">
-                  +35 more schools
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          <PartnerList
+            partnerType="Educational Institutions"
+            partnerList={[
+              "SMA Negeri 1 Jakarta",
+              "SMAN 3 Bandung",
+              "SMP Labschool Kebayoran",
+              "SMPN 5 Surabaya",
+              "SMA Santa Ursula",
+            ]}
+            icon={<BookOpen className="w-8 h-8 text-purple-600" />}
+            color="purple"
+            more="+35 more schools"
+          />
 
-          {/* Government Partners */}
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow text-center">
-            <CardHeader>
-              <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-pink-600" />
-              </div>
-              <CardTitle className="text-xl">Government Partners</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-3 text-sm text-gray-600">
-                <div className="font-semibold">Kemendikbud RI</div>
-                <div className="font-semibold">Dinas Pendidikan DKI</div>
-                <div className="font-semibold">Dinas Pendidikan Jabar</div>
-                <div className="font-semibold">BPPT Indonesia</div>
-                <div className="font-semibold">Kominfo RI</div>
-                <div className="text-pink-600 font-medium">
-                  Digital literacy programs
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          <PartnerList
+            partnerType="Government Partners"
+            partnerList={[
+              "Kemendikbud RI",
+              "Dinas Pendidikan DKI",
+              "Dinas Pendidikan Jabar",
+              "BPPT Indonesia",
+              "Kominfo RI",
+            ]}
+            icon={<Users className="w-8 h-8 text-pink-600" />}
+            color="pink"
+            more="Digital literacy programs"
+          />
 
-          {/* Technology Partners */}
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow text-center">
-            <CardHeader>
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Zap className="w-8 h-8 text-red-600" />
-              </div>
-              <CardTitle className="text-xl">Technology Partners</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-3 text-sm text-gray-600">
-                <div className="font-semibold">Unity Technologies</div>
-                <div className="font-semibold">Meta (Oculus)</div>
-                <div className="font-semibold">Google for Education</div>
-                <div className="font-semibold">Microsoft Education</div>
-                <div className="font-semibold">Adobe Creative Cloud</div>
-                <div className="text-red-600 font-medium">
-                  Certified partners
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          <PartnerList
+            partnerType="Technology Partners"
+            partnerList={[
+              "Unity Technologies",
+              "Meta (Oculus)",
+              "Google for Education",
+              "Microsoft Education",
+              "Adobe Creative Cloud",
+            ]}
+            icon={<Zap className="w-8 h-8 text-blue-600" />}
+            color="blue"
+            more="Certified partners"
+          />
 
-          {/* Industry Collaborations */}
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow text-center">
-            <CardHeader>
-              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Gamepad2 className="w-8 h-8 text-emerald-600" />
-              </div>
-              <CardTitle className="text-xl">Industry Partners</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-3 text-sm text-gray-600">
-                <div className="font-semibold">Toge Productions</div>
-                <div className="font-semibold">Agate International</div>
-                <div className="font-semibold">Digital Happiness</div>
-                <div className="font-semibold">Touchten Games</div>
-                <div className="font-semibold">Kidalang</div>
-                <div className="text-emerald-600 font-medium">
-                  Game industry network
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          <PartnerList
+            partnerType="Industry Partners"
+            partnerList={[
+              "Toge Productions",
+              "Agate International",
+              "Digital Happiness",
+              "Touchten Games",
+              "Kidalang",
+            ]}
+            icon={<Gamepad2 className="w-8 h-8 text-emerald-600" />}
+            color="emerald"
+            more="Game industry network"
+          />
         </div>
 
         {/* Client Testimonials */}
@@ -116,84 +84,36 @@ export default function Partner() {
             What Our Partners Say
           </h3>
           <div className="grid lg:grid-cols-3 gap-8">
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <div className="flex text-yellow-400 mb-2">
-                    {"★".repeat(5)}
-                  </div>
-                  <p className="text-gray-600 italic mb-4">
-                    &quot;Rikari Kreasi Digital transformed our computer science
+            <PartnerTestimony
+              testimony="Rikari Kreasi Digital transformed our computer science
                     curriculum. Students are now more engaged and excited about
                     learning programming through their game development
-                    course.&quot;
-                  </p>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                    <Users className="w-6 h-6 text-purple-600" />
-                  </div>
-                  <div>
-                    <div className="font-semibold">Dra. Sari Wijaya, M.Pd</div>
-                    <div className="text-sm text-gray-500">
-                      Principal, SMAN 1 Jakarta
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                    course."
+              name="Dra. Sari Wijaya, M.Pd"
+              star={5}
+              occupation="Principal"
+              company="SMAN 1 Jakarta"
+            />
 
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <div className="flex text-yellow-400 mb-2">
-                    {"★".repeat(5)}
-                  </div>
-                  <p className="text-gray-600 italic mb-4">
-                    &quot;The VR History Museum project has revolutionized how
+            <PartnerTestimony
+              testimony="The VR History Museum project has revolutionized how
                     our students learn about ancient civilizations. The
-                    engagement level is unprecedented.&quot;
-                  </p>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mr-4">
-                    <BookOpen className="w-6 h-6 text-pink-600" />
-                  </div>
-                  <div>
-                    <div className="font-semibold">Dr. Ahmad Fauzi</div>
-                    <div className="text-sm text-gray-500">
-                      History Teacher, SMP Labschool
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                    engagement level is unprecedented."
+              name="Dr. Ahmad Fauzi"
+              star={5}
+              occupation="History Teacher"
+              company="SMP Labschool"
+            />
 
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <div className="flex text-yellow-400 mb-2">
-                    {"★".repeat(5)}
-                  </div>
-                  <p className="text-gray-600 italic mb-4">
-                    &quot;Working with Rikari has been exceptional. Their
-                    educational games have improved our students&apos; math
-                    scores by 40% while making learning fun.&quot;
-                  </p>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
-                    <Gamepad2 className="w-6 h-6 text-red-600" />
-                  </div>
-                  <div>
-                    <div className="font-semibold">Ibu Ratna Sari, S.Pd</div>
-                    <div className="text-sm text-gray-500">
-                      Math Coordinator, SMPN 5 Surabaya
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <PartnerTestimony
+              testimony="Working with Rikari has been exceptional. Their
+                    educational games have improved our students' math
+                    scores by 40% while making learning fun."
+              name="Ibu Ratna Sari, S.Pd"
+              star={5}
+              occupation="Math Coordinator"
+              company="SMPN 5 Surabaya"
+            />
           </div>
         </div>
 
@@ -203,30 +123,34 @@ export default function Partner() {
             Partnership Impact
           </h3>
           <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-purple-600 mb-2">40+</div>
-              <p className="text-gray-600 font-medium">School Partners</p>
-              <p className="text-sm text-gray-500">Across Indonesia</p>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-pink-600 mb-2">15+</div>
-              <p className="text-gray-600 font-medium">Government Projects</p>
-              <p className="text-sm text-gray-500">National & Regional</p>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-red-600 mb-2">8+</div>
-              <p className="text-gray-600 font-medium">Tech Partnerships</p>
-              <p className="text-sm text-gray-500">Global Companies</p>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-emerald-600 mb-2">
-                25+
-              </div>
-              <p className="text-gray-600 font-medium">
-                Industry Collaborations
-              </p>
-              <p className="text-sm text-gray-500">Game Studios</p>
-            </div>
+            <SimpleStats
+              number="40+"
+              label="School Partners"
+              subLabel="Across Indonesia"
+              numberSize="3xl"
+              color="text-purple-600"
+            />
+            <SimpleStats
+              number="15+"
+              label="Government Projects"
+              subLabel="National & Regional"
+              numberSize="3xl"
+              color="text-pink-600"
+            />
+            <SimpleStats
+              number="8+"
+              label="Tech Partnerships"
+              subLabel="Global Companies"
+              numberSize="3xl"
+              color="text-blue-600"
+            />
+            <SimpleStats
+              number="25+"
+              label="Industry Collaborations"
+              subLabel="Game Studios"
+              numberSize="3xl"
+              color="text-emerald-600"
+            />
           </div>
         </div>
 
