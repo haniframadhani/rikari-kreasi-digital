@@ -26,12 +26,14 @@ import Image from "next/image";
 export default function PortfolioModal({
   selectedProject,
   closeModal,
+  open = true,
 }: {
   selectedProject: PortfolioProject;
   closeModal: () => void;
+  open?: boolean;
 }) {
   return (
-    <Dialog open onOpenChange={closeModal}>
+    <Dialog open={open} onOpenChange={closeModal}>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold flex items-center gap-3">
