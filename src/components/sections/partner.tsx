@@ -31,7 +31,8 @@ export default function Partner() {
               "SMA Santa Ursula",
             ]}
             icon={<BookOpen className="w-8 h-8 text-purple-600" />}
-            color="purple"
+            bgColor="bg-purple-100"
+            textColor="text-purple-600"
             more="+35 more schools"
           />
 
@@ -45,7 +46,8 @@ export default function Partner() {
               "Kominfo RI",
             ]}
             icon={<Users className="w-8 h-8 text-pink-600" />}
-            color="pink"
+            bgColor="bg-pink-100"
+            textColor="text-pink-600"
             more="Digital literacy programs"
           />
 
@@ -59,7 +61,8 @@ export default function Partner() {
               "Adobe Creative Cloud",
             ]}
             icon={<Zap className="w-8 h-8 text-blue-600" />}
-            color="blue"
+            bgColor="bg-blue-100"
+            textColor="text-blue-600"
             more="Certified partners"
           />
 
@@ -73,7 +76,8 @@ export default function Partner() {
               "Kidalang",
             ]}
             icon={<Gamepad2 className="w-8 h-8 text-emerald-600" />}
-            color="emerald"
+            bgColor="bg-emerald-100"
+            textColor="text-emerald-600"
             more="Game industry network"
           />
         </div>

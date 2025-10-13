@@ -14,9 +14,13 @@ const meta = {
     label: {
       description: "Optional label to display instead of the contact detail",
     },
-    color: {
+    bgColor: {
       description:
-        "Using default Tailwind CSS color names or [custom color](https://tailwindcss.com/docs/colors#customizing-your-colors) without the 'bg-' or 'text-' prefix and without the '-100' or '-600' suffix.",
+        "Using default Tailwind CSS color names or [custom color](https://tailwindcss.com/docs/colors#customizing-your-colors)",
+    },
+    textColor: {
+      description:
+        "Using default Tailwind CSS color names or [custom color](https://tailwindcss.com/docs/colors#customizing-your-colors)",
     },
     icon: {
       description:
@@ -39,7 +43,8 @@ export const Email: Story = {
     description: "Send us a message anytime",
     contact: "info@rikarikreasi.com",
     type: "email",
-    color: "purple",
+    bgColor: "bg-purple-100",
+    textColor: "text-purple-600",
     icon: <Mail className="w-8 h-8 text-purple-600" />,
   },
 };
@@ -50,7 +55,8 @@ export const Phone: Story = {
     description: "Speak with our team",
     contact: "+622112345678",
     type: "phone",
-    color: "blue",
+    bgColor: "bg-blue-100",
+    textColor: "text-blue-600",
     icon: <PhoneIcon className="w-8 h-8 text-blue-600" />,
     label: "+62 21 1234 5678",
   },
@@ -62,7 +68,8 @@ export const Other: Story = {
     description: "Message us on WhatsApp",
     contact: "wa.me/622112345678",
     type: "other",
-    color: "green",
+    bgColor: "bg-green-100",
+    textColor: "text-green-600",
     icon: <MessageCircle className="w-8 h-8 text-green-600" />,
     label: "+62 21 1234 5678",
   },

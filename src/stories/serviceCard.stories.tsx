@@ -7,9 +7,9 @@ const meta = {
   component: ServiceCard,
   title: "Service/Card",
   argTypes: {
-    color: {
+    gradientColor: {
       description:
-        "Using default Tailwind CSS color names or [custom color](https://tailwindcss.com/docs/colors#customizing-your-colors) without the 'bg-' or 'text-' prefix and without the '-100' or '-600' suffix.",
+        "Using default Tailwind CSS color names or [custom color](https://tailwindcss.com/docs/colors#customizing-your-colors) with gradient format, e.g. 'from-purple-500 to-purple-600'",
     },
     icon: {
       description:
@@ -28,7 +28,7 @@ export const Default: Story = {
     longDescription:
       "From concept to deployment, we create engaging games that captivate audiences and deliver meaningful experiences.",
     shortDescription: "Custom game solutions for entertainment and education",
-    color: "purple",
+    gradientColor: "from-purple-500 to-purple-600",
     tags: ["Mobile Games", "PC Games", "Educational Games", "Serious Games"],
     details: [
       "Custom game design and development",

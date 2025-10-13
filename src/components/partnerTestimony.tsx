@@ -11,7 +11,7 @@ export default function PartnerTestimony({
   name: string;
   company?: string;
   occupation?: string;
-  star: number;
+  star: 1 | 2 | 3 | 4 | 5;
 }) {
   return (
     <Card className="border-0 shadow-lg">

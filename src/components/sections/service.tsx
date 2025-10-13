@@ -33,7 +33,7 @@ export default function Service() {
               "Educational game mechanics",
               "Performance optimization",
             ]}
-            color="purple"
+            gradientColor="from-purple-500 to-purple-600"
             icon={<Gamepad2 className="w-10 h-10 text-white" />}
           />
 
@@ -54,7 +54,7 @@ export default function Service() {
               "Skills training simulations",
               "Multi-platform VR support",
             ]}
-            color="pink"
+            gradientColor="from-pink-500 to-pink-600"
             icon={<Headphones className="w-10 h-10 text-white" />}
           />
 
@@ -75,7 +75,7 @@ export default function Service() {
               "Professional instructor support",
               "Portfolio development guidance",
             ]}
-            color="red"
+            gradientColor="from-red-500 to-red-600"
             icon={<BookOpen className="w-10 h-10 text-white" />}
           />
         </div>

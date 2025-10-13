@@ -11,7 +11,7 @@ export default function ServiceCard({
   title,
   shortDescription,
   longDescription,
-  color,
+  gradientColor,
   tags,
   details,
   icon,
@@ -19,7 +19,7 @@ export default function ServiceCard({
   title: string;
   shortDescription?: string;
   longDescription: string;
-  color: string;
+  gradientColor: string;
   tags?: string[];
   details?: string[];
   icon: React.ReactNode;
@@ -28,9 +28,7 @@ export default function ServiceCard({
     <Card className="border-0 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
       <CardHeader>
         <div
-          className={`w-20 h-20 bg-gradient-to-br ${
-            "from-" + color + "-500 to-" + color + "-600"
-          } rounded-lg flex items-center justify-center mb-4`}
+          className={`w-20 h-20 bg-gradient-to-br ${gradientColor} rounded-lg flex items-center justify-center mb-4`}
         >
           {icon}
         </div>

@@ -5,21 +5,21 @@ export default function PartnerList({
   partnerList,
   more,
   icon,
-  color,
+  bgColor,
+  textColor,
 }: {
   partnerType: string;
   partnerList: string[];
   more?: string;
   icon: React.ReactNode;
-  color: string;
+  bgColor: string;
+  textColor: string;
 }) {
   return (
     <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow text-center">
       <CardHeader>
         <div
-          className={`w-16 h-16 ${
-            "bg-" + color + "-100"
-          } rounded-full flex items-center justify-center mx-auto mb-4`}
+          className={`w-16 h-16 ${bgColor} rounded-full flex items-center justify-center mx-auto mb-4`}
         >
           {icon}
         </div>
@@ -32,11 +32,7 @@ export default function PartnerList({
               {partner}
             </div>
           ))}
-          {more && (
-            <div className={`${"text-" + color + "-600"} font-medium`}>
-              {more}
-            </div>
-          )}
+          {more && <div className={`${textColor} font-medium`}>{more}</div>}
         </div>
       </CardContent>
     </Card>

@@ -22,7 +22,8 @@ export default function Contact() {
             title="Email Us"
             description="Send us a message anytime"
             type="email"
-            color="purple"
+            bgColor="bg-purple-100"
+            textColor="text-purple6100"
             contact="info@rikarikreasi.com"
             icon={<Mail className="w-8 h-8 text-purple-600" />}
           />
@@ -30,7 +31,8 @@ export default function Contact() {
             title="Call Us"
             description="Speak with our team"
             type="phone"
-            color="pink"
+            bgColor="bg-pink-100"
+            textColor="text-pink-600"
             contact="+622112345678"
             label="+62 21 1234 5678"
             icon={<Phone className="w-8 h-8 text-pink-600" />}
@@ -39,7 +41,8 @@ export default function Contact() {
             title="Message Us"
             description="Message us on WhatsApp"
             type="other"
-            color="green"
+            bgColor="bg-green-100"
+            textColor="text-green-600"
             contact="wa.me/622112345678"
             label="+62 21 1234 5678"
             icon={<MessageCircle className="w-8 h-8 text-green-600" />}
@@ -48,7 +51,8 @@ export default function Contact() {
             title="Visit Us"
             description="Come to our studio"
             type="other"
-            color="blue"
+            bgColor="bg-blue-100"
+            textColor="text-blue-600"
             contact="+622112345678"
             label="Yogyakarta, Indonesia"
             icon={<MapPin className="w-8 h-8 text-blue-600" />}

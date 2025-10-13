@@ -22,7 +22,7 @@ export default function About() {
           title="Innovation"
           description="Pushing boundaries with cutting-edge technology and creative
               solutions that shape the future of digital entertainment."
-          color="purple"
+          bgColor="bg-purple-100"
           icon={<Lightbulb className="w-8 h-8 text-purple-600" />}
         />
 
@@ -30,7 +30,7 @@ export default function About() {
           title="Education"
           description="Empowering students and educators with comprehensive programs that
               make learning interactive and engaging."
-          color="pink"
+          bgColor="bg-pink-100"
           icon={<Users className="w-8 h-8 text-pink-600" />}
         />
 
@@ -38,7 +38,7 @@ export default function About() {
           title="Experience"
           description="Creating immersive experiences that transport users to new worlds
               and possibilities through VR and interactive media."
-          color="green"
+          bgColor="bg-green-100"
           icon={<Headphones className="w-8 h-8 text-green-600" />}
         />
       </div>

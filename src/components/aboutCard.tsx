@@ -3,21 +3,19 @@ import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
 export default function AboutCard({
   title,
   description,
-  color,
+  bgColor,
   icon,
 }: {
   title: string;
   description: string;
-  color: string;
+  bgColor: string;
   icon: React.ReactNode;
 }) {
   return (
     <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow">
       <CardHeader>
         <div
-          className={`w-16 h-16 ${
-            "bg-" + color + "-100"
-          } rounded-full flex items-center justify-center mx-auto mb-4`}
+          className={`w-16 h-16 ${bgColor} rounded-full flex items-center justify-center mx-auto mb-4`}
         >
           {icon}
         </div>

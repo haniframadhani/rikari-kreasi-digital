@@ -8,7 +8,8 @@ export default function ContactCard({
   contact,
   label,
   type,
-  color,
+  bgColor,
+  textColor,
   icon,
 }: {
   title: string;
@@ -16,16 +17,15 @@ export default function ContactCard({
   contact: string;
   label?: string;
   type: "email" | "phone" | "other";
-  color: string;
+  bgColor: string;
+  textColor: string;
   icon: React.ReactNode;
 }) {
   return (
     <Card className="text-center border-0 shadow-lg">
       <CardHeader>
         <div
-          className={`w-16 h-16 ${
-            "bg-" + color + "-100"
-          } rounded-full flex items-center justify-center mx-auto mb-4`}
+          className={`w-16 h-16 ${bgColor} rounded-full flex items-center justify-center mx-auto mb-4`}
         >
           {icon}
         </div>
@@ -36,21 +36,21 @@ export default function ContactCard({
         {type === "email" ? (
           <Link
             href={"mailto:" + contact}
-            className={`font-semibold ${"text-" + color + "-600"}`}
+            className={`font-semibold ${textColor}`}
           >
             {label ? label : contact}
           </Link>
         ) : type === "phone" ? (
           <Link
             href={"tel:" + contact}
-            className={`font-semibold ${"text-" + color + "-600"}`}
+            className={`font-semibold ${textColor}`}
           >
             {label ? label : contact}
           </Link>
         ) : (
           <Link
             href={contact}
-            className={`font-semibold ${"text-" + color + "-600"}`}
+            className={`font-semibold ${textColor}`}
           >
             {label ? label : contact}
           </Link>

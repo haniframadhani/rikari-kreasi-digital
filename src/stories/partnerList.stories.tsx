@@ -7,9 +7,13 @@ const meta = {
   component: PartnerList,
   title: "Portfolio/List",
   argTypes: {
-    color: {
+    bgColor: {
       description:
-        "Using default Tailwind CSS color names or [custom color](https://tailwindcss.com/docs/colors#customizing-your-colors) without the 'bg-' or 'text-' prefix and without the '-100' or '-600' suffix.",
+        "Using default Tailwind CSS color names or [custom color](https://tailwindcss.com/docs/colors#customizing-your-colors)",
+    },
+    textColor: {
+      description:
+        "Using default Tailwind CSS color names or [custom color](https://tailwindcss.com/docs/colors#customizing-your-colors)",
     },
     icon: {
       description:
@@ -33,7 +37,8 @@ export const Default: Story = {
       "SMA Santa Ursula",
     ],
     icon: <BookOpen className="w-8 h-8 text-purple-600" />,
-    color: "purple",
+    bgColor: "bg-purple-100",
+    textColor: "text-purple-600",
     more: "+35 more schools",
   },
 };

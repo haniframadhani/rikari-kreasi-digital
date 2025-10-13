@@ -7,9 +7,9 @@ const meta = {
   component: AboutCard,
   title: "About/Card",
   argTypes: {
-    color: {
+    bgColor: {
       description:
-        "Using default Tailwind CSS color names or [custom color](https://tailwindcss.com/docs/colors#customizing-your-colors) without the 'bg-' or 'text-' prefix and without the '-100' or '-600' suffix.",
+        "Using default Tailwind CSS color names or [custom color](https://tailwindcss.com/docs/colors#customizing-your-colors)",
     },
     icon: {
       description:
@@ -27,7 +27,7 @@ export const Example: Story = {
     title: "Innovation",
     description:
       "Pushing boundaries with cutting-edge technology and creative solutions that shape the future of digital entertainment.",
-    color: "purple",
+    bgColor: "purple",
     icon: <Lightbulb className="w-8 h-8 text-purple-600" />,
   },
 };
