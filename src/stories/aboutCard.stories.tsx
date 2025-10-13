@@ -5,6 +5,7 @@ import { Lightbulb } from "lucide-react";
 
 const meta = {
   component: AboutCard,
+  title: "About/Card",
   argTypes: {
     color: {
       description:

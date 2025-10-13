@@ -15,6 +15,7 @@ import PortfolioProject from "@/types/portfolioPorject";
 
 const meta = {
   component: PortfolioModal,
+  title: "Portfolio/Modal",
   argTypes: {
     selectedProject: {
       description: "Selected portfolio project data",

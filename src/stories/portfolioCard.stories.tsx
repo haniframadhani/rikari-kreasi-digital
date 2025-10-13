@@ -13,6 +13,7 @@ import PortfolioCard from "../components/portfolioCard";
 
 const meta = {
   component: PortfolioCard,
+  title: "Portfolio/Card",
   argTypes: {
     openModal: {
       description: "Function to open the modal",

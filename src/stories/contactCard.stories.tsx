@@ -5,6 +5,7 @@ import { Mail, Phone as PhoneIcon, MessageCircle } from "lucide-react";
 
 const meta = {
   component: ContactCard,
+  title: "Contact/Card",
   argTypes: {
     contact: {
       description:

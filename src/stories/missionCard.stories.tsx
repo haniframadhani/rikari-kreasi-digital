@@ -4,6 +4,7 @@ import MissionCard from '../components/missionCard';
 
 const meta = {
   component: MissionCard,
+  title: "Mission/Card",
 } satisfies Meta<typeof MissionCard>;
 
 export default meta;

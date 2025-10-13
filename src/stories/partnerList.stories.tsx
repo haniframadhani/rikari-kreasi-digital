@@ -5,6 +5,7 @@ import { BookOpen } from "lucide-react";
 
 const meta = {
   component: PartnerList,
+  title: "Portfolio/List",
   argTypes: {
     color: {
       description:

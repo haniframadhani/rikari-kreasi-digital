@@ -5,6 +5,7 @@ import { Gamepad2 } from "lucide-react";
 
 const meta = {
   component: ServiceCard,
+  title: "Service/Card",
   argTypes: {
     color: {
       description:

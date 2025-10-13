@@ -4,6 +4,7 @@ import SimpleStats from "../components/simpleStats";
 
 const meta = {
   component: SimpleStats,
+  title: "Other/Simple Stats",
   argTypes: {
     color: {
       description:
