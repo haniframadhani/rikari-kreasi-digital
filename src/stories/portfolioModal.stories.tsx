@@ -11,18 +11,41 @@ import nr3 from "../assets/nr-3.png";
 import nr4 from "../assets/nr-4.png";
 import nr5 from "../assets/nr-5.png";
 import { Button } from "@/components/ui/button";
-import PortfolioProject from "@/types/portfolioPorject";
+import PortfolioProject from "@/types/portfolioProject";
 
 const meta = {
   component: PortfolioModal,
   title: "Portfolio/Modal",
+  tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: `
+A responsive modal that displays detailed information about a portfolio project,
+including images, features, and outcomes.  
+
+In real usage, it opens when a project is selected and closes when dismissed.  
+In Storybook, use the **Open** control to toggle visibility.`,
+      },
+    },
+  },
   argTypes: {
     selectedProject: {
-      description: "Selected portfolio project data",
+      description:
+        "The selected portfolio project to display. [See PortfolioProject](/?path=/docs/type-portfolioproject--docs)",
+      control: { type: "object" },
     },
     closeModal: {
-      description: "Function to close the modal",
-      action: fn(),
+      description: "Function that closes the modal.",
+      action: "closeModal",
+    },
+    open: {
+      description:
+        "(Storybook only) Manually toggle modal visibility for documentation purposes.",
+      control: { type: "boolean" },
+      table: {
+        defaultValue: { summary: "true" },
+      },
     },
   },
 } satisfies Meta<typeof PortfolioModal>;
@@ -50,6 +73,14 @@ export const Default: Story = {
     selectedProject,
     closeModal: fn(),
     open: false,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Demonstrates how the modal opens and displays a project's details.",
+      },
+    },
   },
   render: (args) => {
     const [open, setOpen] = useState(false);

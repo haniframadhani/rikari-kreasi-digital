@@ -3,7 +3,7 @@
 import PortfolioCard from "../portfolioCard";
 import numberRun from "../../assets/number-run-cover.png";
 import ct from "../../assets/ct-cover.png";
-import PortfolioProject from "@/types/portfolioPorject";
+import PortfolioProject from "@/types/portfolioProject";
 import { useState } from "react";
 import PortfolioModal from "../portfolioModal";
 import ct1 from "../../assets/ct-1.png";

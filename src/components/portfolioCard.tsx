@@ -2,7 +2,7 @@ import { Gamepad2, Headphones, BookOpen } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 import Image from "next/image";
-import PortfolioProject from "@/types/portfolioPorject";
+import PortfolioProject from "@/types/portfolioProject";
 
 const typeConfig = {
   game: {

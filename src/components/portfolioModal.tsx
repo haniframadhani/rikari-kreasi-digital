@@ -19,7 +19,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import PortfolioProject from "@/types/portfolioPorject";
+import PortfolioProject from "@/types/portfolioProject";
 import Link from "next/link";
 import Image from "next/image";
 
