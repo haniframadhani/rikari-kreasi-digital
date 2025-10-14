@@ -4,7 +4,7 @@ import PartnerTestimony from "../components/partnerTestimony";
 
 const meta = {
   component: PartnerTestimony,
-  title: "Portfolio/Testimony",
+  title: "Partner/Testimony",
 } satisfies Meta<typeof PartnerTestimony>;
 
 export default meta;
