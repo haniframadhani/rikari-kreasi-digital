@@ -3,7 +3,7 @@ import AboutCard from "../aboutCard";
 
 export default function About() {
   return (
-    <section className="py-20 container mx-auto px-4">
+    <section className="py-20 container mx-auto px-4" id="about">
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h2 className="text-4xl font-bold mb-6 text-gray-800">
           About Rikari Kreasi Digital

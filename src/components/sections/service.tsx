@@ -3,7 +3,7 @@ import ServiceCard from "../serviceCard";
 
 export default function Service() {
   return (
-    <section className="py-20 bg-white" id="service">
+    <section className="py-20 bg-white" id="services">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 text-gray-800">

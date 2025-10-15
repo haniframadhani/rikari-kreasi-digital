@@ -6,7 +6,7 @@ import SimpleStats from "../simpleStats";
 
 export default function Partner() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id="partners">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 text-gray-800">
